@@ -15,11 +15,15 @@
     body {
       background-color: #f9f9f9;
       color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .container {
+      width: 100%;
       max-width: 480px;
-      margin: 0 auto;
       padding: 20px;
     }
 
@@ -159,6 +163,11 @@
       .overlay-text p {
         font-size: 13px;
       }
+
+      body {
+        align-items: flex-start;
+        padding-top: 30px;
+      }
     }
   </style>
 </head>
@@ -167,11 +176,16 @@
     <div class="header">
       <div class="logo">
         <strong>GO BANK</strong>
+      </div>
+      <button class="register-btn">Register</button>
+    </div>
+
+    <div class="hero">
+      <img src="https://via.placeholder.com/480x300?text=Hero+Image" alt="Hero" class="hero-image" />
+      <div class="overlay-text">
         <h1>Welcome to a new banking experience</h1>
         <p>With you anytime, anywhere</p>
       </div>
-      </div>
-      <button class="register-btn">Register</button>
     </div>
 
     <div class="login-card">
